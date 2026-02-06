@@ -1,0 +1,2 @@
+[console_scripts]
+weighing-parser = weighing_parser.main:main

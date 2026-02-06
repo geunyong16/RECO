@@ -1,0 +1,86 @@
+# 나라장터 CSS 선택자 설정
+# 사이트 구조 변경 시 이 파일만 수정하면 됩니다.
+
+list_page:
+  # 테이블 관련
+  table: "table.list_table, table.tb_list, #resultList table"
+  rows: "table tbody tr, table.list_table tr:not(:first-child)"
+  no_data: ".no_data, .nodata, td[colspan]"
+
+  # 페이지네이션
+  pagination: ".pagination, .paging, #paging"
+  page_links: ".pagination a, .paging a"
+  current_page: ".pagination .on, .paging .current"
+  next_page: ".pagination .next, .paging .next, a[title='다음']"
+  total_count: ".total_count, .count, #totalCnt"
+
+  # 목록 항목 (행 내부 셀)
+  bid_id: "td:nth-child(2), td.bid_no"
+  title: "td:nth-child(3) a, td.title a, td a.title"
+  organization: "td:nth-child(4), td.org"
+  bid_type: "td:nth-child(5), td.type"
+  status: "td:nth-child(6), td.status"
+  deadline: "td:nth-child(7), td.deadline"
+  price: "td:nth-child(8), td.price"
+
+detail_page:
+  # 컨테이너
+  detail_container: ".detail_view, .view_table, #detailView"
+  info_table: "table.info_table, table.view_tb, .detail_info table"
+
+  # 기본 정보
+  bid_id: "th:has-text('공고번호') + td, .bid_no"
+  title: "th:has-text('공고명') + td, .title, h3.tit"
+  bid_type: "th:has-text('입찰유형') + td, th:has-text('업종') + td"
+  status: "th:has-text('상태') + td, th:has-text('진행상태') + td"
+
+  # 기관 정보
+  organization: "th:has-text('공고기관') + td, th:has-text('발주기관') + td"
+  demand_org: "th:has-text('수요기관') + td"
+
+  # 일시 정보
+  announce_date: "th:has-text('공고일') + td, th:has-text('공고일시') + td"
+  deadline: "th:has-text('마감') + td, th:has-text('입찰마감') + td"
+
+  # 금액 정보
+  estimated_price: "th:has-text('추정가') + td, th:has-text('예정가격') + td"
+  base_price: "th:has-text('기초금액') + td"
+
+  # 상세 정보
+  bid_method: "th:has-text('입찰방식') + td, th:has-text('낙찰방법') + td"
+  contract_method: "th:has-text('계약방법') + td"
+  qualification: "th:has-text('참가자격') + td, th:has-text('입찰참가자격') + td"
+
+  # 지역 정보
+  region: "th:has-text('지역') + td, th:has-text('납품지역') + td"
+  delivery_location: "th:has-text('납품장소') + td, th:has-text('납품지') + td"
+
+  # 담당자 정보
+  contact_dept: "th:has-text('담당부서') + td"
+  contact_person: "th:has-text('담당자') + td"
+  contact_phone: "th:has-text('전화') + td, th:has-text('연락처') + td"
+  contact_email: "th:has-text('이메일') + td, th:has-text('메일') + td"
+
+  # 첨부파일
+  attachments: ".attach_list a, .file_list a, a[href*='download']"
+
+  # 참조번호
+  reference_no: "th:has-text('참조번호') + td, th:has-text('사업번호') + td"
+  registration_no: "th:has-text('사업자등록') + td"
+
+# 입찰 유형 매핑
+bid_type_mapping:
+  물품: "GOODS"
+  용역: "SERVICE"
+  공사: "CONSTRUCTION"
+  외자: "FOREIGN"
+
+# 상태 매핑
+status_mapping:
+  공고중: "OPEN"
+  진행중: "OPEN"
+  마감: "CLOSED"
+  마감됨: "CLOSED"
+  취소: "CANCELLED"
+  연기: "POSTPONED"
+  재공고: "REBID"
