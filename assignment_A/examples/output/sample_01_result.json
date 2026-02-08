@@ -1,0 +1,38 @@
+{
+  "document_type": "계량증명서",
+  "date": "2026-02-02",
+  "sequence_number": "0016",
+  "vehicle_number": "8713",
+  "company_name": "곰욕환경폐기물",
+  "product_name": "식물",
+  "category": null,
+  "total_weight": {
+    "value_kg": 12480,
+    "timestamp": "05:26:18"
+  },
+  "tare_weight": {
+    "value_kg": 7470,
+    "timestamp": "05:36:01"
+  },
+  "net_weight": {
+    "value_kg": 5010,
+    "timestamp": null
+  },
+  "issuing_company": "동우바이오(주)",
+  "timestamp": "2026-02-02 05:37:55",
+  "gps_coordinates": {
+    "latitude": 37.105317,
+    "longitude": 127.375673
+  },
+  "address": null,
+  "phone": null,
+  "confidence_scores": {
+    "document_type": 0.95,
+    "date": 0.92,
+    "vehicle_number": 0.88,
+    "total_weight": 0.96,
+    "tare_weight": 0.94,
+    "net_weight": 0.97
+  },
+  "validation_errors": []
+}

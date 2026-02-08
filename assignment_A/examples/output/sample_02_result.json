@@ -1,0 +1,35 @@
+{
+  "document_type": "계표",
+  "date": "2026-02-02",
+  "sequence_number": "0021",
+  "vehicle_number": "80구8713",
+  "company_name": "고요환경",
+  "product_name": "국판",
+  "category": "입고",
+  "total_weight": {
+    "value_kg": 13460,
+    "timestamp": "11:33:00"
+  },
+  "tare_weight": {
+    "value_kg": 7560,
+    "timestamp": "12:01:00"
+  },
+  "net_weight": {
+    "value_kg": 5900,
+    "timestamp": null
+  },
+  "issuing_company": null,
+  "timestamp": "2026-02-02 12:01:00",
+  "gps_coordinates": null,
+  "address": null,
+  "phone": null,
+  "confidence_scores": {
+    "document_type": 0.78,
+    "date": 0.91,
+    "vehicle_number": 0.85,
+    "total_weight": 0.93,
+    "tare_weight": 0.90,
+    "net_weight": 0.95
+  },
+  "validation_errors": []
+}

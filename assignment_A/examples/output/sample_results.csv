@@ -1,0 +1,4 @@
+document_type,date,sequence_number,vehicle_number,company_name,product_name,category,total_weight_kg,total_weight_timestamp,tare_weight_kg,tare_weight_timestamp,net_weight_kg,issuing_company,timestamp,latitude,longitude,address,phone
+계량증명서,2026-02-02,0016,8713,곰욕환경폐기물,식물,,12480,05:26:18,7470,05:36:01,5010,동우바이오(주),2026-02-02 05:37:55,37.105317,127.375673,,
+계표,2026-02-02,0021,80구8713,고요환경,국판,입고,13460,11:33:00,7560,12:01:00,5900,,2026-02-02 12:01:00,,,,
+계량확인서,2026-02-02,0018,8713,고요환경,식물,,5900,09:09:00,7560,09:15:00,-1660,,2026-02-02 09:15:00,,127.375673,경기도 화성시,031-354-7778
